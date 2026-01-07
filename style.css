@@ -1,3 +1,9 @@
+.globalnav:hover {
+    color:orange;
+}
+
+
+
 .globalnav {
     position:fixed;
     top: 0;

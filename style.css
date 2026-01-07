@@ -1,3 +1,25 @@
+.globalnav {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.globalnav ul {
+    display: flex;
+    list-style: none;
+    height: 60px;
+    margin: 0;
+    padding: 0 24px;
+    align-items: center;
+}
+
+.global-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
 
 .headnav li {
    text-align:center;

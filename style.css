@@ -2,9 +2,8 @@
     color:orange;
 }
 
-
-
 .globalnav {
+    text-align: center;
     position:fixed;
     top: 0;
     width: 100%;
@@ -20,7 +19,7 @@
     align-items: center;
 }
 
-.global-nav a {
+.globalnav a {
     color: white;
     text-decoration: none;
     margin-right: 24px;

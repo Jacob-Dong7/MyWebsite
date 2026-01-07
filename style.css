@@ -1,0 +1,49 @@
+.headnav li, .headnav a{
+   text-align:center;
+   color: white;
+   font-size: 20px;
+}
+
+.mainmenu {
+   background-color: #141E30;
+   color: white;
+}
+#maintitle {
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+}
+
+.intro, .aboutme, .skills {
+   text-align:center;
+   font-size: 25px;
+}
+
+.intro h2, .aboutme h2, .skills h2 {
+   font-weight: bold;
+   font-size:30px;
+}
+
+.aboutme figcaption {
+   font-size: 15px;
+   font-style: italic;
+   color: orange;
+}
+
+.skills li {
+   font-size: 30px;
+   font-style:italic;
+   
+}
+
+.contact, .contact a {
+   text-align:center;
+   color: orange;
+   font-size: 20px;
+}
+
+.contact h2 {
+   font-size:30px;
+   font-weight:bold;
+   color:white;
+}

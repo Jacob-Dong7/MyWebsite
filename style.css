@@ -1,9 +1,7 @@
-.headnav {
-   list-style: none;
-}
 
 .headnav li {
    text-align:center;
+   list-style: none;
 }
 
 .headnav a {

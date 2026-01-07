@@ -1,5 +1,12 @@
-.headnav li, .headnav a{
+.headnav {
+   list-style: none;
+}
+
+.headnav li {
    text-align:center;
+}
+
+.headnav a {
    color: white;
    font-size: 20px;
 }

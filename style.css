@@ -1,5 +1,6 @@
 
 .navbar {
+   display:flex;
    border-style: solid;
    height: 30px;
    width: 100%;

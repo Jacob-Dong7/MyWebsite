@@ -22,6 +22,30 @@
    color:#4FC3F7;
 }
 
+.introCard {
+   background-color:#4FC3F7;
+   height:200px;
+   width: 400px;
+   border-style:solid;
+   margin: 20px;
+   justify-content:center;
+   display:flex;
+   align-items:center;
+}
+
+.introCard h {
+   font-size: 50px;
+   font-weight: bold;
+   color:#1E2A38;
+   padding: 20px;
+}
+
+.introCard p {
+   font-size: 40px;
+   font-weight: bold;
+   color:#1E2A38;
+   padding: 20px;
+}
 
 .headnav li {
    text-align:center;
@@ -34,7 +58,7 @@
 }
 
 h1.maintitle {
-   
+
 }
 
 .mainmenu {

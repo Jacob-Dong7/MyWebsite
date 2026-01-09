@@ -1,6 +1,6 @@
 
 .navbar {
-   background-color: #CF4B00;
+   background-color: #FFFFFF;
    display:flex;
    justify-content: space-evenly;
    border-style: solid;
@@ -12,10 +12,14 @@
 }
 
 .navbar a {
-   color:white;
+   color:black;
    text-decoration: none;
    padding: 0 20px;
    font-size: 20px;
+}
+
+.navbar:hover {
+   color:#4FC3F7;
 }
 
 
@@ -29,8 +33,12 @@
    font-size: 20px;
 }
 
+h1.maintitle {
+   
+}
+
 .mainmenu {
-   background-color: #9CC6DB;
+   background-color: #1E2A38;
    color: white;
 }
 #maintitle {

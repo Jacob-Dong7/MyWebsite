@@ -18,7 +18,7 @@
    font-size: 20px;
 }
 
-.navbar:hover {
+.navbar a:hover {
    color:#4FC3F7;
 }
 
@@ -33,7 +33,7 @@
    align-items:center;
 }
 
-.introCard h {
+.introCard h1 {
    font-size: 50px;
    font-weight: bold;
    color:#1E2A38;

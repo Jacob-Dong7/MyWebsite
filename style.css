@@ -1,28 +1,16 @@
-.globalnav:hover {
-    color:orange;
+
+.navbar {
+   border-style: solid;
+   height: 30px;
+   width: 100%;
+   align-items:center;
 }
 
-.globalnav {
-    text-align: center;
-    position:fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.globalnav ul {
-    display: flex;
-    list-style: none;
-    height: 60px;
-    margin: 0;
-    padding: 0 24px;
-    align-items: center;
-}
-
-.globalnav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 24px;
+.navbar a {
+   color:white;
+   text-decoration: none;
+   padding: 20px;
+   font-size: 20px;
 }
 
 

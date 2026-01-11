@@ -1,21 +1,49 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Montserrat";
+}
+
+.myintroduction {
+   justify-items: center;
+   width: 90%;
+   margin: 0 auto;
+}
+.myintroduction h2, .aboutme h2, .skills h2{
+   font-size: 2.3em;
+   margin-bottom: 2%;
+}
+
+
+
+.myintroduction p {
+   font-size: 1.5em;
+   display:block;
+}
+
+
 
 .navbar {
-   background-color: #FFFFFF;
+   background-color: #264653;
    display:flex;
    justify-content: space-evenly;
    border-style: solid;
    border: 5px;
-
+   margin: 0;
    height: 60px;
    width: 100%;
    align-items:center;
 }
 
 .navbar a {
-   color:black;
+   color:white;
+   font-weight:bold;
+   font-family: "Montserrat";
+   font-size: 1.4em;
    text-decoration: none;
    padding: 0 20px;
-   font-size: 20px;
+ 
 }
 
 .navbar a:hover {
@@ -23,47 +51,87 @@
 }
 
 .introCard {
-   background-color:#42A5F5;
-   width: 80%;
-
+   background-color:#A1E3D8;
+   width: 90%;
+   text-align: center;
+   flex-direction: column;
    border-style:solid;
-   margin: 20px;
-   justify-content:center;
    display:flex;
-   align-items:center;
+   margin: 4% auto 6%;
 }
 
 .introCard h1 {
-   font-size: 2.5em;
+   margin: 3% auto 5%;
+   font-size: 3em;
    font-weight: bold;
-   color:#1E2A38;
-   padding: 20px;
+   color:#264653;
+   padding: 5px, 20px;
+   font-family: "Montserrat", sans-serif;
 }
 
+.skillitems {
+   margin: 3% auto;
+}
+
+.contact h2 {
+   font-size: 2.3em;
+   margin-bottom: 2%;
+   color:white;
+}
+.contact {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   width:100%;
+   background-color: #264653;
+}
+
+.contact a, .contact p {
+   font-weight: bold;
+   font-size: 0.9em;
+   color:white;
+   text-decoration: none;
+   margin: 5px auto 10px;
+}
+
+
+
+.skillitems p {
+   font-size:0.9em;
+   font-family:"Open Sans";
+   margin: 1% auto;
+}
 .introCard p {
-   font-size: 40px;
+   margin-bottom: 3%;
+   font-size: 1.5em;
    font-weight: bold;
-   color:#1E2A38;
-   padding: 20px;
+   color:#264653;
+   padding-bottom: 30px;
+   font-family: "Open Sans", sans-serif
 }
 
-.headnav li {
-   text-align:center;
-   list-style: none;
+.headnav {
+   background-color: #A1E3D8;
+   border-style: solid;
+   width: 40%;
+   margin: 0 auto 5%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
 }
 
 .headnav a {
-   color: white;
-   font-size: 20px;
-}
-
-h1.maintitle {
-
+   color: black;
+   font-family: "Montserrat";
+   font-weight: bold;
+   font-size: 1.7em;
+   margin: 40px auto 30px;
+   text-decoration: none;
 }
 
 .mainmenu {
-   background-color: #1E2A38;
-   color: white;
+   background-color: #F1F1F1;
+   color: black;
 }
 #maintitle {
    font-size: 40px;
@@ -82,25 +150,14 @@ h1.maintitle {
 }
 
 .aboutme figcaption {
-   font-size: 15px;
-   font-style: italic;
-   color: orange;
+   font-family: "Open Sans";
+   font-size: 0.7em;
+   
+
 }
 
 .skills li {
    font-size: 30px;
    font-style:italic;
    
-}
-
-.contact, .contact a {
-   text-align:center;
-   color: orange;
-   font-size: 20px;
-}
-
-.contact h2 {
-   font-size:30px;
-   font-weight:bold;
-   color:white;
 }

@@ -1,163 +1,302 @@
 * {
    margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: "Montserrat";
+   font-family: "League Spartan", sans-serif;
 }
 
-.myintroduction {
-   justify-items: center;
-   width: 90%;
-   margin: 0 auto;
-}
-.myintroduction h2, .aboutme h2, .skills h2{
-   font-size: 2.3em;
-   margin-bottom: 2%;
+.main {
+   padding-top: 10%;
+   background-color: #F6F4ED;
 }
 
+/*Navigation Bar*/
 
-
-.myintroduction p {
-   font-size: 1.5em;
-   display:block;
-}
-
-
-
-.navbar {
-   background-color: #264653;
-   display:flex;
-   justify-content: space-evenly;
+.nav {
+   box-shadow: 3px 3px 0 #000;
+   background-color: #FFC63B;
+   height: 3%;
+   padding: 2rem;
+   display: flex;
+   gap: 2rem;
+   width: 80%;
+   align-items: center;
    border-style: solid;
-   border: 5px;
+   border-radius: 30px;
+   position: fixed;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.nav a {
+   flex: 1;
+   font-weight: bolder;
    margin: 0;
-   height: 60px;
+   color: black;
+   text-decoration: none;
+   font-size: 1.5rem;
+}
+
+.nav a:hover, .nav a:focus {
+   text-decoration: underline;
+   color: blue;
+
+}
+
+.nav img {
+   margin-right: auto;
+   width: 2.5rem;
+   height: auto;
+}
+
+/*Introduction Card*/
+.intro-card {
+   border-width: 8px;
+   box-shadow: 14px 14px 0 #000;
+   border-style:solid;
+   background-color: #FFC63B;
+   border-radius:20px;
+   width: 80%;
+   height: 700px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 80px auto;
+}
+
+.intro-card h2 {
+   margin-top: 1rem;
+   margin-bottom: 0.2em;
+   color: black;
+   font-size: 3rem;
+   font-weight: 1000;
+   letter-spacing: 0.01em;
+}
+
+.namecard {
+   border-width: 5px;
+   width: 90%;
+   height: auto;
+   margin: 2em auto;
+   border-radius: 20px;
+   padding: 2rem;
+   background-color: gainsboro;
+   border-style: solid;
+}
+.intro-card h1 {
+   margin: 2rem;
+   font-size: 7rem;
+   font-weight: 1000;
+}
+
+/*About Me*/
+.aboutme {
+   margin-top: 200px;
+   border-style:solid;
+   border-width: 5px;
+
    width: 100%;
+   height: 700px;
+   background-color: #FFC63B;
+}
+
+.aboutme h2 {
+   font-weight: 1000;
+   text-align: center;
+   margin: 1rem;
+   color: black;
+   font-size: 3rem;
+}
+.description {
+   box-shadow: 10px 10px 0 #000;
+   padding: 10px;
+   background-color: #FFF8E1;
+   width: 70%;
+   height: auto;
+   margin: 5rem auto;
+   border-style: solid;
+   border-radius: 10px;
+}
+
+.description p {
+   font-size: 1.8rem;
+   font-weight: bold;
+}
+
+/*Skills*/
+.skills {
+   
+   justify-items: center;
+   width: 100%;
+   display:inline-block;
+}
+
+.skills h2 {
+   font-weight: 1000;
+   padding-bottom: 5%;
+   padding-top: 20px;
+   text-align: center;
+   font-size: 3rem;
+}
+
+.icons {
+   display: flex;
+   gap: 80px;
+}
+.icons img {
+   box-shadow: 14px 14px 0 #000;
+   background-color: #FFC63B;
+   border-style: solid;
+   border-radius: 10px;
+   width: 10rem;
+   height: auto;
+   padding: 50px;
+}
+
+/*Project*/
+.projects {
+   border-style: solid;
+   border-width: 5px;
+   background-color: #D9C6F4;
+   width: 100%;
+   margin-top: 5%;
+}
+
+.project-intro {
+   font-weight: 1000;
+   padding-bottom: 5%;
+   padding-top: 20px;
+   text-align: center;
+   font-size: 3rem;
+}
+
+/* Individual Projects */
+.project {
+   box-shadow: 14px 14px 0 #000;
+   background-color: #FFC63B;
+   border-style: solid;
+   width: 85%;
+   margin: 5% auto;
+}
+
+.project-title {
+   font-weight: 1000;
+   padding-top: 20px;
+   text-align: center;
+   font-size: 3rem;
+}
+
+.project-row {
+   display: flex;
    align-items:center;
 }
 
-.navbar a {
-   color:white;
-   font-weight:bold;
-   font-family: "Montserrat";
-   font-size: 1.4em;
-   text-decoration: none;
-   padding: 0 20px;
- 
-}
-
-.navbar a:hover {
-   color:#4FC3F7;
-}
-
-.introCard {
-   background-color:#A1E3D8;
-   width: 90%;
-   text-align: center;
-   flex-direction: column;
+.project-desc{
+   box-shadow: 8px 8px 0 #000;
+   background-color: #D9C6F4;
+   font-weight: bold;
+   font-size: 2.5rem;
+   padding: 20px;
+   margin: 20px;
    border-style:solid;
-   display:flex;
-   margin: 4% auto 6%;
+   border-radius: 20px;
+   flex: 1;
+   text-align: left;
 }
 
-.introCard h1 {
-   margin: 3% auto 5%;
-   font-size: 3em;
-   font-weight: bold;
-   color:#264653;
-   padding: 5px, 20px;
-   font-family: "Montserrat", sans-serif;
-}
-
-.skillitems {
-   margin: 3% auto;
-}
-
-.contact h2 {
-   font-size: 2.3em;
-   margin-bottom: 2%;
-   color:white;
-}
-.contact {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-   width:100%;
-   background-color: #264653;
-}
-
-.contact a, .contact p {
-   font-weight: bold;
-   font-size: 0.9em;
-   color:white;
-   text-decoration: none;
-   margin: 5px auto 10px;
-}
-
-
-
-.skillitems p {
-   font-size:0.9em;
-   font-family:"Open Sans";
-   margin: 1% auto;
-}
-.introCard p {
-   margin-bottom: 3%;
-   font-size: 1.5em;
-   font-weight: bold;
-   color:#264653;
-   padding-bottom: 30px;
-   font-family: "Open Sans", sans-serif
-}
-
-.headnav {
-   background-color: #A1E3D8;
+.project img {
+   box-shadow: 8px 8px 0 #000;
+   background-color: #D9C6F4;
    border-style: solid;
-   width: 40%;
-   margin: 0 auto 5%;
+   border-radius: 20px;
+   padding: 20px;
+   margin: 20px;
+   width: 45rem;
+   height: auto;
+}
+
+
+.project-logo img{
+   box-shadow: 2px 2px 0 #000;
+   flex: 1;
+   width:2.5rem;
+   height: auto;
+}
+
+/*Contact me form */
+.contactme {
+   width: 100%;
+}
+
+.contactme h2 {
+   font-weight: 1000;
+   padding-bottom: 5%;
+   padding-top: 20px;
+   text-align: center;
+   font-size: 3rem;
+}
+.contactform {
+   box-shadow: 12px 12px 0 black;
+   background-color: #FFC63B;
+   width: 60%;
+   height: auto;
+   margin: 0 auto;
+   border-style: solid;
+   border-radius: 30px;
+   border-width: 5px;
+   padding: 20px;
    display: flex;
    flex-direction: column;
-   text-align: center;
+   align-items: center;
 }
-
-.headnav a {
+.contactform label {
+   font-weight: 1000;
    color: black;
-   font-family: "Montserrat";
+   font-size: 2rem;
    font-weight: bold;
-   font-size: 1.7em;
-   margin: 40px auto 30px;
-   text-decoration: none;
 }
 
-.mainmenu {
-   background-color: #F1F1F1;
-   color: black;
+.email {
+   width: 400px;
+   height: 50px;
+   font-size: 20px;
 }
-#maintitle {
-   font-size: 40px;
-   font-weight: bold;
+
+.message {
+   text-align: left;
+   width: 400px;
+   height: 200px;
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+
+.submit-button {
+   background-color: #D9C6F4;
+   width: 400px;
+   height: 50px;
+   font-size: 2rem;
+   font-weight:bold;
+   margin-bottom: 20px;
+}
+
+.footer {
+   width: 80%;
+   margin: 0 auto;
+   box-shadow: 5px 5px 0 black;
+   background-color: #FFC63B;
+   margin-top: 50px;
+   border-style: solid;
+   border-radius: 30px;
+}
+.footer-content {
    text-align: center;
-}
-
-.intro, .aboutme, .skills {
-   text-align:center;
-   font-size: 25px;
-}
-
-.intro h2, .aboutme h2, .skills h2 {
+   font-size: 1rem;
    font-weight: bold;
-   font-size:30px;
 }
 
-.aboutme figcaption {
-   font-family: "Open Sans";
-   font-size: 0.7em;
-   
-
+.footer-links img {
+   width: 2.5rem;
+   height: auto;
 }
 
-.skills li {
-   font-size: 30px;
-   font-style:italic;
-   
-}
+
+

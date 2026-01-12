@@ -1,93 +1,126 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet" >
-        <title>Jacob Dong's Website</title>
-    </head>
 
-    <body class="mainmenu">
-        <nav class="navbar">
-            <a href="./index.html">Main menu</a>
-            <a href ="./myprojects.html">My Projects</a>
-        </nav>
+<head>
+    <title>Jacob Dong's Website</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
 
-        <header>
+<body class="main">
 
-            <div class="introCard">
-            <h1>Jacob Dong</h1>
-            <p>Welcome to my personal website</p>
-            </div>
+    <section class="navigation">
+        
+        <div class="nav">
+            <a href="#home">Home</a>
+            <a href="#aboutme">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contactme">Contact</a>
+            <a href="https://www.instagram.com/jdotyi7/"><img src="./Images/instagram.png"></a>
+            <a href="https://github.com/Jacob-Dong7"><img src="./Images/github.jpg"></a>
 
-            <div>
-            <nav class="headnav">
-                <a href="#intro">Introduction</a>
-                <a href="#aboutme">About Me</a>
-                <a href="#skills">My Skills</a>
-                <a href="#contact">Contact Me</a>
-        </nav>
         </div>
-    </header>
 
-        <main>
+    </section>
 
-        <!--Introduction-->
-        <section class="myintroduction">
-            <h2>Introduction</h2>
-            <p>Hi, my name is <strong>Jacob Dong</strong> and this is a personal website i am developing for fun.</p>
-            <p><em>Most</em> of the things i will be posting on this website are just personal thoughts and such.</p>
-            <p>This will also partially works as my portfolio for my computer science degree as I might push some of my works here.</p>
-            <br>
-        </section>
+    <section class="intro-card" id="home">
+        <h2>Welcome!</h2>
+        <h2>I am</h2>
+        <div class="namecard"> 
+            <h1>Jacob <br>Dong</h1>
+        </div>
 
-        <!--About me-->
-        <section class="aboutme">
-            <h2>About Me</h2>
-                <p>I was born in <strong>Guangzhou China</strong></p>
-                <figure class="picture">
-                    <img src="./Images/zhongshan.jpg" width="520" height="320"/>
-                    <figcaption>The city of Zhongshan</figcaption>
-                </figure>
-           <br>
-                <p>I am currently living in <strong>Melbourne Australia</strong></p>
-                <p>I study at RMIT for a bachelor of computer science</p>
-                <figure class="picture">
-                    <img src="./Images/rmit.jpg" width="600" height="300" />
-                    <figcaption>The university of RMIT</figcaption>
-                </figure>
-           <br>
-                <p>I am passionate about </strong>basketball</strong> and have played in competitions for a <em>large</em> chunk of my high school years</p>
-                <p>My favourite passtime is gaming</p>
-                <p>I love animals, especially <em>dogs</em></p>
-        </section>
-   <br>
+    </section>
 
-        <!--My Skills-->
-        <section class="skills" id="skills">
-            <h2>My Skills</h2>
-            <p>I am current studying computer science at RMIT and I am familiar with:</p>
+    <section class="aboutme" id="aboutme"> 
+        <h2>About Me</h2>
+        <div class="description">
+        <p>Hi, I'm Jacob</p>
+        <p>I am an aspiring developer and computer science student who is passionate about continuous learning and expanding my technical skills</p>
+        <p>through hands-on projects and problem-solving.</p>
+        <br>
+        <p>I was introduced to computers at a young age, which sparked a long-standing interest in technology and gaming.</p>
+        <p>One of the first games I remember playing was Half-Life 2 on my older brother’s Windows PC, and I went on to play dozens, if not hundreds, of games over the years.</p>
+        <br>
+        <p>My passion for gaming gradually led me to explore how software works behind the scenes, inspiring me to pursue software development and a deeper understanding of computer science.</p>
+        </div>
+    </section>
 
-            <div class="skillitems">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>C++</p>
-                <p>SQL</p>
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="icons">
+        <img src="./Images/html-5.png" alt="HTML">
+        <img src="./Images/css-3.png" alt="CSS">
+        <img src="./Images/cpp.png" alt="C++">
+        <img src="./Images/sql.png" alt="SQL">
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2 class="project-intro">Projects</h2>
+
+        <div class="project">
+            <h2 class="project-title">Taskly</h2>
+
+            <div class="project-row">
+            <p class="project-desc">A clean, lightweight task manager built with C++ and Qt. Users can quickly add tasks, mark them complete, and keep their list organised with automatic cleanup and simple filtering.</p>
+            <img src="./Images/taskly.png" alt="Image of the To Do List Application">
+            <a href="https://github.com/Jacob-Dong7/To-Do-List" class="project-logo"><img src="./Images/github.jpg" alt="Github Link"></a>
             </div>
-        </section>
+        </div>
 
-        <!--Contact-->
-        <section class="contact">
-           <br>
-            <h2>Contact Me</h2>
-            <a href="https://www.instagram.com/jdotyi7/" target="_blank">Instagram</a>
-            <a href="https://github.com/Jacob-Dong7/Jacob-Dong7" target="_blank">Github</a>
-            <p>Email: JDON219206@gmail.com</p>
-        </section>
+        <div class="project">
+            <h2 class="project-title">UniConvert Pro</h2>
 
+            <div class="project-row">
+            <p class="project-desc">A fast, user-friendly unit conversion tool built with C++ and Qt, supporting multiple measurement categories including length, weight, temperature, and currency with clean formatting and real-time results.</p>
+            <img src="./Images/uniconvert.png" alt="Image of UniConvert Pro">
+            <br>
+            <a href="https://github.com/Jacob-Dong7/Unit-Converter" class="project-logo"><img src="./Images/github.jpg" alt="Github Link"></a>
+            </div>
+        </div>
 
-    </main>
+        <div class="project">
+            <h2 class="project-title">Calculator</h2>
+
+            <div class="project-row">
+            <p class="project-desc">A clean and efficient calculator built with C++ and Qt, designed for fast and accurate basic arithmetic with a simple, responsive, and intuitive interface.</p>
+            <img src="./Images/calculator.png" alt="Image of the calculator app">
+            <a href="https://github.com/Jacob-Dong7/CalculatorApp" class="project-logo"><img src="./Images/github.jpg" alt="Github Link"></a>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    
+    <section class="contactme" id="contactme">
+        <h2>Contact</h2>
+        <form action="https://formsubmit.co/JDON219206@gmail.com" method="POST" class="contactform">
+            <label for="email">Email</label>
+            <br>
+            <input type="text" name="email" class="email" placeholder="Email Address" required>
+            <br>
+            <label for="message">Message</label>
+            <br>
+            <textarea placeholder="Your Message" class="message" id="message" rows="5" cols="5" class="message" required>
+            </textarea>
+            <br>
+            <input type="submit" value="Send" class="submit-button">
+        </div>
+    </section>
 
     <footer class="footer">
-        <p>Developed by Jacob Dong @RMIT</p>
+        <div class="footer-content">
+            <p>Jacob Dong - Computer Science Student</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Jacob-Dong7" target="_blank"><img src="./Images/github.jpg"></a>
+                    <a href="https://www.instagram.com/jdotyi7/" target="_blank"><img src="./Images/instagram.png"></a>
+                </div>
+        </div>
     </footer>
-    </body>
+</body>
+
+
+
+
+
 </html>

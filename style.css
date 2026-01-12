@@ -175,7 +175,7 @@
    box-shadow: 14px 14px 0 #000;
    background-color: #FFC63B;
    border-style: solid;
-   width: 85%;
+   width: min(85%);
    margin: 5% auto;
 }
 
@@ -184,11 +184,6 @@
    padding-top: 20px;
    text-align: center;
    font-size: 3rem;
-}
-
-.project-row {
-   display: flex;
-   align-items:center;
 }
 
 .project-desc{
@@ -205,26 +200,28 @@
 }
 
 .project img {
+   display: block;
    box-shadow: 8px 8px 0 #000;
    background-color: #D9C6F4;
    border-style: solid;
    border-radius: 20px;
    padding: 20px;
-   margin: 20px;
+   margin: 20px auto;
 
 
-   width: min(45rem, 100%);
+   max-width: 80%;
+   width: 50%;
    height: auto;
    display: block;
 }
 
 
-.project-logo img{
+.project .project-logo img{
    box-shadow: 2px 2px 0 #000;
-   flex: 1;
+   max-width: 30px;
    width: 30px;
-   min-height: 30px;
    height: auto;
+   margin: 0 auto;
 }
 
 /*Contact me form */

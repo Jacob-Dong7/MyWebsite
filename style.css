@@ -38,7 +38,7 @@
 
 .nav a:hover, .nav a:focus {
    text-decoration: underline;
-   color: blue;
+   color: #2F6F6D;
 
 }
 
@@ -216,12 +216,12 @@
 }
 
 
-.project .project-logo img{
+.project-logo img{
    box-shadow: 2px 2px 0 #000;
    max-width: 30px;
    width: 30px;
    height: auto;
-   margin: 0 auto;
+   margin: 20px auto;
 }
 
 /*Contact me form */
@@ -306,4 +306,12 @@
    height: auto;
 }
 
+.submit-button {
+   border-color: #000;
+   box-shadow: 5px 5px 0 black;
+   font-family: "League Spartan";
+   font-weight: bold;
+   border-radius: 5px;
+   border-width: 2px;
+}
 

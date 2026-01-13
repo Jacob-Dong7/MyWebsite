@@ -193,6 +193,7 @@
    box-shadow: 14px 14px 0 #000;
    background-color: #FFC63B;
    border-style: solid;
+   border-width: 5px;
    width: min(85%);
    margin: 12rem auto;
 }

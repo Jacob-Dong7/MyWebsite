@@ -142,13 +142,14 @@
 }
 
 .description p {
+   line-height: 1.6;
    font-size: 1.8rem;
    font-weight: bold;
 }
 
 /*Skills*/
 .skills {
-   
+   margin-bottom: 7rem;
    justify-items: center;
    width: 100%;
    display:inline-block;
@@ -164,7 +165,7 @@
 
 .icons {
    display: flex;
-   gap: 80px;
+   gap: 10rem;
 }
 .icons img {
    box-shadow: 14px 14px 0 #000;
@@ -193,7 +194,7 @@
    background-color: #FFC63B;
    border-style: solid;
    width: min(85%);
-   margin: 5% auto;
+   margin: 12rem auto;
 }
 
 .project-title {
@@ -201,6 +202,7 @@
    padding-top: 20px;
    text-align: center;
    font-size: 3rem;
+   margin-bottom: 5rem;
 }
 
 .project-desc{
@@ -214,6 +216,7 @@
    border-radius: 20px;
    flex: 1;
    text-align: left;
+   line-height: 1.6;
 }
 
 .project img {

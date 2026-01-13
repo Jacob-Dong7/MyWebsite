@@ -1,26 +1,33 @@
+/*Universal settings*/
 * {
    margin: 0;
    font-family: "League Spartan", sans-serif;
 }
 
 .main {
-   padding-top: 10%;
+   padding-top: 9rem;
    background-color: #F6F4ED;
 }
 
-/*Navigation Bar*/
 
+
+/*Navigation Bar*/
 .nav {
    box-shadow: 3px 3px 0 #000;
    background-color: #FFC63B;
-   height: 3%;
+
+   width: min(1200px, 92%);
+   height: auto;
    padding: 2rem;
+
    display: flex;
    gap: 2rem;
-   width: 80%;
+
    align-items: center;
+
    border-style: solid;
    border-radius: 30px;
+
    position: fixed;
    top: 0;
    left: 50%;
@@ -29,84 +36,100 @@
 
 .nav a {
    flex: 1;
-   font-weight: bolder;
-   margin: 0;
+
    color: black;
    text-decoration: none;
-   font-size: 1.5rem;
+
+   font-size: clamp(1.1rem, 1.5rem, 2rem);
+   font-weight: 800;
 }
 
 .nav a:hover, .nav a:focus {
    text-decoration: underline;
    color: #2F6F6D;
-
 }
 
 .nav img {
    margin-right: auto;
-   width: 2.5rem;
+   width: min(3rem, 2.5rem);
    height: auto;
 }
 
 /*Introduction Card*/
 .intro-card {
-   border-width: 8px;
-   box-shadow: 14px 14px 0 #000;
-   border-style:solid;
-   background-color: #FFC63B;
+   border: 8px solid #000;
    border-radius:20px;
-   width: 80%;
-   height: 700px;
+
+   box-shadow: 14px 14px 0 #000;
+   background-color: #FFC63B;
+
+   width: min(1300px, 92%);
+   min-height: 700px;
+   height: auto;
+   padding: 2rem;
+
    display: flex;
    flex-direction: column;
    text-align: center;
-   margin: 80px auto;
+
+   margin: clamp(48px, 6vw, 80px) auto;
 }
 
 .intro-card h2 {
-   margin-top: 1rem;
-   margin-bottom: 0.2em;
+   margin: clamp(0.5rem, 1rem, 2rem) auto clamp(0.1rem, 0,2rem, 0,3rem);
+
    color: black;
-   font-size: 3rem;
+
+   font-size: clamp(1.1rem, 3.2rem, 4rem);
    font-weight: 1000;
+
    letter-spacing: 0.01em;
+   line-height: 1.6;
+}
+
+.intro-card h3 {
+   margin: clamp(0.5rem, 1rem, 2rem) auto clamp(0.1rem, 0,2rem, 0,3rem);
+
+   color: black;
+
+   font-size: clamp(1rem, 2.4rem, 3.8rem);
+   font-weight: 1000;
+
+   letter-spacing: 0.01em;
+   line-height: 1.6;
 }
 
 .namecard {
-   border-width: 5px;
-   width: 85%;
-   height: auto;
-   margin: 2em auto;
+   border: 5px solid black;
    border-radius: 20px;
+
+   width: min(1200px, 85%);
+   min-height: 300px;
+   height: auto;
+
+   margin: clamp(1rem, 2rem, 3rem) auto;
    padding: 2rem;
    background-color: #F6F4ED;
-   border-style: solid;
 }
 .intro-card h1 {
-   margin: 2rem;
-   font-size: 7rem;
+   margin: clamp(1rem, 2rem, 3rem);
+   font-size: clamp(3rem, 7rem, 9rem);
    font-weight: 1000;
 }
 
 /*About Me*/
 .aboutme {
-   margin-top: 200px;
-   border-style:solid;
-   border-width: 5px;
+   margin-top: clamp(5rem, 18rem, 25rem);
+   border: 5px solid black;
 
    width: 100%;
-   min-height: 700px;
+   min-height: 800px;
    height: auto;
+
    background-color: #FFC63B;
 }
 
-.aboutme h2 {
-   font-weight: 1000;
-   text-align: center;
-   margin: 1rem;
-   color: black;
-   font-size: 3rem;
-}
+
 .description {
    box-shadow: 10px 10px 0 #000;
    padding: 10px;
@@ -162,13 +185,7 @@
    margin-top: 5%;
 }
 
-.project-intro {
-   font-weight: 1000;
-   padding-bottom: 5%;
-   padding-top: 20px;
-   text-align: center;
-   font-size: 3rem;
-}
+
 
 /* Individual Projects */
 .project {
@@ -226,16 +243,11 @@
 
 /*Contact me form */
 .contactme {
+   margin-top: 10rem;
    width: 100%;
 }
 
-.contactme h2 {
-   font-weight: 1000;
-   padding-bottom: 5%;
-   padding-top: 20px;
-   text-align: center;
-   font-size: 3rem;
-}
+
 .contactform {
    box-shadow: 12px 12px 0 black;
    background-color: #FFC63B;
@@ -294,7 +306,7 @@
    border-style: solid;
    border-radius: 30px;
 
-   margin: 20px auto 0;
+   margin: 5rem auto 0;
 }
 
 .footer-thank {
@@ -332,7 +344,7 @@
 .return {
    display: flex;
    justify-content: center;
-   margin-top: 10%;
+   margin-top: 15%;
 }
 .return a {
    border-radius: 20px;
@@ -366,4 +378,31 @@
 
 .main-thank {
    background-color: #F6F4ED;
+}
+
+/* Section Intro */
+.section-intro {
+   margin-bottom: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.section-intro h2 {
+   margin-top: 2rem;
+   font-weight: 800;
+   text-align: center;
+
+   color: black;
+   font-size: 3rem;
+   line-height: 1;
+
+}
+
+.section-intro img {
+   margin-top: 2rem;
+  height: clamp(2rem, 3rem, 5rem);
+  width: auto;
+  display: block;
 }
